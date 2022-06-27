@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuoteGenerator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QuoteGernerator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srO-kY-RhN">
+                                <rect key="frame" x="24" y="68" width="366" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="611-gu-7j7">
+                                <rect key="frame" x="24" y="113" width="366" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbf-7c-eRb">
+                                        <rect key="frame" x="20" y="20" width="326" height="140"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZC-ju-vL6">
+                                        <rect key="frame" x="20" y="180" width="326" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rbf-7c-eRb" firstAttribute="leading" secondItem="611-gu-7j7" secondAttribute="leading" constant="20" id="4HS-3A-7jZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="4ZC-ju-vL6" secondAttribute="bottom" constant="20" id="8w6-fK-4Si"/>
+                                    <constraint firstAttribute="trailing" secondItem="rbf-7c-eRb" secondAttribute="trailing" constant="20" id="SJI-eT-eR4"/>
+                                    <constraint firstItem="4ZC-ju-vL6" firstAttribute="top" secondItem="rbf-7c-eRb" secondAttribute="bottom" constant="20" id="b2U-P9-xzx"/>
+                                    <constraint firstAttribute="trailing" secondItem="4ZC-ju-vL6" secondAttribute="trailing" constant="20" id="kOn-Cm-bSg"/>
+                                    <constraint firstAttribute="height" constant="200" id="oBb-dP-dV1"/>
+                                    <constraint firstItem="4ZC-ju-vL6" firstAttribute="leading" secondItem="611-gu-7j7" secondAttribute="leading" constant="20" id="pgi-fY-7BG"/>
+                                    <constraint firstItem="rbf-7c-eRb" firstAttribute="top" secondItem="611-gu-7j7" secondAttribute="top" constant="20" id="yeg-hM-0lc"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SG1-Zs-bim">
+                                <rect key="frame" x="152" y="333" width="110.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Create Quote"/>
+                                <connections>
+                                    <action selector="tapQuoteGernerator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aqM-9a-lzA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SG1-Zs-bim" firstAttribute="top" secondItem="611-gu-7j7" secondAttribute="bottom" constant="20" id="Che-Fh-Tii"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="srO-kY-RhN" secondAttribute="trailing" constant="24" id="D6t-ra-P0G"/>
+                            <constraint firstItem="srO-kY-RhN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="LAN-mD-5Mi"/>
+                            <constraint firstItem="srO-kY-RhN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="OVa-Xh-BDk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="611-gu-7j7" secondAttribute="trailing" constant="24" id="Ubp-5s-J0B"/>
+                            <constraint firstItem="611-gu-7j7" firstAttribute="top" secondItem="srO-kY-RhN" secondAttribute="bottom" constant="24" id="aAX-EQ-L1H"/>
+                            <constraint firstItem="SG1-Zs-bim" firstAttribute="centerX" secondItem="611-gu-7j7" secondAttribute="centerX" id="gdF-Ly-YZh"/>
+                            <constraint firstItem="611-gu-7j7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="vuR-7r-27s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="4ZC-ju-vL6" id="One-Qg-jIX"/>
+                        <outlet property="quoteLabel" destination="rbf-7c-eRb" id="t71-oh-xid"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
